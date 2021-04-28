@@ -1,0 +1,10 @@
+G:\ITEAProTask\Chapter3\Task4\bin\Debug\Task4.exe.config
+G:\ITEAProTask\Chapter3\Task4\bin\Debug\Task4.exe
+G:\ITEAProTask\Chapter3\Task4\bin\Debug\Task4.pdb
+G:\ITEAProTask\Chapter3\Task4\obj\Debug\Task4.csprojAssemblyReference.cache
+G:\ITEAProTask\Chapter3\Task4\obj\Debug\Task4.Form1.resources
+G:\ITEAProTask\Chapter3\Task4\obj\Debug\Task4.Properties.Resources.resources
+G:\ITEAProTask\Chapter3\Task4\obj\Debug\Task4.csproj.GenerateResource.cache
+G:\ITEAProTask\Chapter3\Task4\obj\Debug\Task4.csproj.CoreCompileInputs.cache
+G:\ITEAProTask\Chapter3\Task4\obj\Debug\Task4.exe
+G:\ITEAProTask\Chapter3\Task4\obj\Debug\Task4.pdb
