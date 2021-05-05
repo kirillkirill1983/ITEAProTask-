@@ -1,7 +1,6 @@
 G:\ITEAProTask\Chapter_4\Task_5\bin\Debug\Task_5.exe.config
 G:\ITEAProTask\Chapter_4\Task_5\bin\Debug\Task_5.exe
 G:\ITEAProTask\Chapter_4\Task_5\bin\Debug\Task_5.pdb
-G:\ITEAProTask\Chapter_4\Task_5\obj\Debug\Task_5.csprojAssemblyReference.cache
 G:\ITEAProTask\Chapter_4\Task_5\obj\Debug\Task_5.csproj.CoreCompileInputs.cache
 G:\ITEAProTask\Chapter_4\Task_5\obj\Debug\Task_5.exe
 G:\ITEAProTask\Chapter_4\Task_5\obj\Debug\Task_5.pdb

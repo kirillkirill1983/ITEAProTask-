@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Task_1
 {
@@ -11,7 +8,7 @@ namespace Task_1
         static void Main(string[] args)
         {
             Calculator calculator = new Calculator(); 
-            Console.WriteLine("Введите выполяемую арифметическую операцию");
+            Console.WriteLine("Введите выполяемую арифметическую операцию + - * /");
             var operatorEnter = Convert.ToString(Console.ReadLine());
 
             Console.WriteLine("Введите первый оператор => ");
