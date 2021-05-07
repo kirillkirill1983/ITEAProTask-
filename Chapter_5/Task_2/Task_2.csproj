@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D69F22C6-BCE1-4889-AB35-D8CB656593C0}</ProjectGuid>
+    <ProjectGuid>{A8FD6DD6-742E-408A-8D0F-4E7249C1D469}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Task_2</RootNamespace>
     <AssemblyName>Task_2</AssemblyName>
@@ -55,6 +55,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entity1.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,9 +78,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="ModelFirst.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -120,7 +120,6 @@
       <LastGenOutput>Model1.Context.cs</LastGenOutput>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
-    <Content Include="Model1.edmx.sql" />
     <Content Include="Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model1.cs</LastGenOutput>

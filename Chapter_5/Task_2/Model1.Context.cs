@@ -25,6 +25,6 @@ namespace Task_2
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<ModelFirst> ModelFirstSet { get; set; }
+        public virtual DbSet<Entity1> Entity1Set { get; set; }
     }
 }
