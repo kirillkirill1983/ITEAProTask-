@@ -1,0 +1,15 @@
+G:\ITEAProTask\Chapter_5\Task_1\bin\Debug\Task_1.exe.config
+G:\ITEAProTask\Chapter_5\Task_1\bin\Debug\Task_1.exe
+G:\ITEAProTask\Chapter_5\Task_1\bin\Debug\Task_1.pdb
+G:\ITEAProTask\Chapter_5\Task_1\bin\Debug\EntityFramework.dll
+G:\ITEAProTask\Chapter_5\Task_1\bin\Debug\EntityFramework.SqlServer.dll
+G:\ITEAProTask\Chapter_5\Task_1\bin\Debug\EntityFramework.xml
+G:\ITEAProTask\Chapter_5\Task_1\bin\Debug\EntityFramework.SqlServer.xml
+G:\ITEAProTask\Chapter_5\Task_1\obj\Debug\Task_1.csprojAssemblyReference.cache
+G:\ITEAProTask\Chapter_5\Task_1\obj\Debug\Task_1.Form1.resources
+G:\ITEAProTask\Chapter_5\Task_1\obj\Debug\Task_1.Properties.Resources.resources
+G:\ITEAProTask\Chapter_5\Task_1\obj\Debug\Task_1.csproj.GenerateResource.cache
+G:\ITEAProTask\Chapter_5\Task_1\obj\Debug\Task_1.csproj.CoreCompileInputs.cache
+G:\ITEAProTask\Chapter_5\Task_1\obj\Debug\Task_1.csproj.CopyComplete
+G:\ITEAProTask\Chapter_5\Task_1\obj\Debug\Task_1.exe
+G:\ITEAProTask\Chapter_5\Task_1\obj\Debug\Task_1.pdb
