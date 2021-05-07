@@ -16,13 +16,24 @@ namespace Task_2
         public Form1()
         {
             InitializeComponent();
-            
+            model1Container = new Model1Container();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            model1Container = new Model1Container();
-           
+            model1Container.Entity1Set.Add(new Entity1
+            {
+                Id = 1,
+                Name = "kirill",
+                City = "Gopa"
+            });
+            model1Container.Entity1Set.Add(new Entity1
+            {
+                Id = 2,
+                Name = "kirill",
+                City = "Gopa"
+            });
             dataGridView1.DataSource = model1Container.Entity1Set.Local;
            
         }
