@@ -22,7 +22,7 @@ namespace Task_2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+                         
             model1Container.Entity1Set.Add(new Entity1
             {
                 Id = 1,

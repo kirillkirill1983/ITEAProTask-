@@ -13,3 +13,5 @@ G:\ITEAProTask\Chapter_5\Task_2\obj\Debug\Task_2.csproj.CoreCompileInputs.cache
 G:\ITEAProTask\Chapter_5\Task_2\obj\Debug\Task_2.csproj.CopyComplete
 G:\ITEAProTask\Chapter_5\Task_2\obj\Debug\Task_2.exe
 G:\ITEAProTask\Chapter_5\Task_2\obj\Debug\Task_2.pdb
+G:\ITEAProTask\Chapter_5\Task_2\bin\Debug\ru\EntityFramework.resources.dll
+G:\ITEAProTask\Chapter_5\Task_2\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
