@@ -8,12 +8,20 @@ namespace Task_1
 {
     public class Temperatura
     {
-        public int MyProperty1 { get; set; }
-        public int MyProperty2 { get; set; }
+        private int celciy;
 
-        public int Result() 
+        public int Celciy 
         {
-            return MyProperty1 + MyProperty2;
+            get { return celciy; }
+            set { celciy = value; }
+        }
+        public int Faringeit { get; set; }
+
+        public double ResultFaringeit(int celciy ) 
+        {
+            
+            return (celciy*9/5)+32;
+
         }
     }
 }

@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
+
 
 
 namespace Task_2
@@ -27,9 +24,14 @@ namespace Task_2
                 Console.WriteLine(ex.Message);
             }
 
-            GetInfoAboutAllTypes(assembly);
+            //GetInfoAboutAllTypes(assembly);
+            Type type = assembly.GetType("Task_1.Temperatura");
+            dynamic instanse = Activator.CreateInstance(type);
+            MethodInfo methodInfo = type.GetMethod("ResultFaringeit");
+            object[] param = { 2 };
+            dynamic result = methodInfo.Invoke(instanse, param);
+            Console.WriteLine(result);
 
-            //Задержка
             Console.ReadKey();
         }
 
