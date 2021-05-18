@@ -1,0 +1,10 @@
+G:\ITEAProTask\Chapter_6\Task_3\bin\Debug\Task_3.exe.config
+G:\ITEAProTask\Chapter_6\Task_3\bin\Debug\Task_3.exe
+G:\ITEAProTask\Chapter_6\Task_3\bin\Debug\Task_3.pdb
+G:\ITEAProTask\Chapter_6\Task_3\obj\Debug\Task_3.csprojAssemblyReference.cache
+G:\ITEAProTask\Chapter_6\Task_3\obj\Debug\Task_3.Form1.resources
+G:\ITEAProTask\Chapter_6\Task_3\obj\Debug\Task_3.Properties.Resources.resources
+G:\ITEAProTask\Chapter_6\Task_3\obj\Debug\Task_3.csproj.GenerateResource.cache
+G:\ITEAProTask\Chapter_6\Task_3\obj\Debug\Task_3.csproj.CoreCompileInputs.cache
+G:\ITEAProTask\Chapter_6\Task_3\obj\Debug\Task_3.exe
+G:\ITEAProTask\Chapter_6\Task_3\obj\Debug\Task_3.pdb

@@ -1,0 +1,10 @@
+G:\ITEAProTask\Chapter_6\Task_2\bin\Debug\Task_2.exe.config
+G:\ITEAProTask\Chapter_6\Task_2\bin\Debug\Task_2.exe
+G:\ITEAProTask\Chapter_6\Task_2\bin\Debug\Task_2.pdb
+G:\ITEAProTask\Chapter_6\Task_2\bin\Debug\Task_1.dll
+G:\ITEAProTask\Chapter_6\Task_2\bin\Debug\Task_1.pdb
+G:\ITEAProTask\Chapter_6\Task_2\obj\Debug\Task_2.csprojAssemblyReference.cache
+G:\ITEAProTask\Chapter_6\Task_2\obj\Debug\Task_2.csproj.CoreCompileInputs.cache
+G:\ITEAProTask\Chapter_6\Task_2\obj\Debug\Task_2.csproj.CopyComplete
+G:\ITEAProTask\Chapter_6\Task_2\obj\Debug\Task_2.exe
+G:\ITEAProTask\Chapter_6\Task_2\obj\Debug\Task_2.pdb
