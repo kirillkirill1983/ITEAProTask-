@@ -1,6 +1,6 @@
 ﻿using System;
 using System.IO;
-
+using System.IO.Compression;
 
 namespace Task_3
 {
@@ -23,10 +23,10 @@ namespace Task_3
                         " Создан: " + FI.CreationTime);
                 path = FI.FullName;
             }
-            
+
             if (path != null)
             {
-                
+
                 using (StreamReader reader = File.OpenText(path))
                 {
                     string input;
@@ -36,7 +36,22 @@ namespace Task_3
                         Console.WriteLine(input);
                     }
                 }
+
+                FileStream source = File.OpenRead(path);
+                FileStream destination = File.Create(@"G:\Temp_temp\archive.zip");
+                using (GZipStream compressor = new GZipStream(destination, CompressionMode.Compress))
+                {
+                    // Заполнение архива информацией из файла.
+                    int theByte = source.ReadByte();
+
+                    while (theByte != -1)
+                    {
+                        compressor.WriteByte((byte)theByte);
+                        theByte = source.ReadByte();
+                    }
+                }
             }
+
             else
             {
                 Console.WriteLine("Файла нет");
