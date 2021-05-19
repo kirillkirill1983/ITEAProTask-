@@ -14,6 +14,7 @@ namespace FinalPro
             base.Seed(context);
 
             context.Passwords.Add(new Password { PasswordID = 1, Name = "Kirill" });
+            context.Passwords.Add(new Password { PasswordID = 2, Name = "Kirill" });
             context.SaveChanges();
         }
 

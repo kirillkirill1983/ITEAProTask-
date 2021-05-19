@@ -18,11 +18,11 @@ namespace FinalPro
         {
             InitializeComponent();
             
-            Database.SetInitializer(new DropCreateDatabaseAlways<BaseCRM>());
-            Database.SetInitializer(new DropCreatePassword());
+            //Database.SetInitializer(new DropCreateDatabaseAlways<BaseCRM>());
+            //Database.SetInitializer(new DropCreatePassword());
 
             db = new BaseCRM();
-            db.SaveChanges();
+           
         }
     }
 }

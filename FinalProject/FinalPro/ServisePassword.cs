@@ -1,6 +1,4 @@
-﻿
-using FinalPro;
-using System.Data.Entity.ModelConfiguration;
+﻿using System.Data.Entity.ModelConfiguration;
 
 namespace FinalPro
 {
