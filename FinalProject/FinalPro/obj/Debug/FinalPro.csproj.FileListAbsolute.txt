@@ -13,3 +13,4 @@ G:\ITEAProTask\FinalProject\FinalPro\bin\Debug\EntityFramework.SqlServer.xml
 G:\ITEAProTask\FinalProject\FinalPro\bin\Debug\ru\EntityFramework.resources.dll
 G:\ITEAProTask\FinalProject\FinalPro\obj\Debug\FinalPro.csproj.CopyComplete
 G:\ITEAProTask\FinalProject\FinalPro\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+G:\ITEAProTask\FinalProject\FinalPro\obj\Debug\FinalPro.csprojAssemblyReference.cache
