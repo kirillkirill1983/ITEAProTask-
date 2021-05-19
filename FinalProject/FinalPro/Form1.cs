@@ -17,9 +17,12 @@ namespace FinalPro
         public Form1()
         {
             InitializeComponent();
-            // Database.SetInitializer(new DropCreateDatabaseAlways<BaseCRM>());
+            
+            Database.SetInitializer(new DropCreateDatabaseAlways<BaseCRM>());
             Database.SetInitializer(new DropCreatePassword());
+
             db = new BaseCRM();
+            db.SaveChanges();
         }
     }
 }

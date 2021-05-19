@@ -2,7 +2,7 @@
 using FinalPro;
 using System.Data.Entity.ModelConfiguration;
 
-namespace FinalPro.CRMServise
+namespace FinalPro
 {
     class ServisePassword: EntityTypeConfiguration<Password>
     {
