@@ -12,10 +12,10 @@ namespace FinalPro
         public OrderConfig() 
         {
             this.HasKey<int>(s => s.OrderID);
-            this.Property(p => p.CustomerID).
-                HasColumnName("CustomerID");
-            this.Property(p => p.ManagerID).
-                HasColumnName("ManagerID");
+            this.Property(p => p.CustomerName).
+                HasColumnName("Customer");
+            this.Property(p => p.ManagerName).
+                HasColumnName("Manager");
             
             this.Property(p => p.TotalMount).HasColumnName("TotalMount");
 

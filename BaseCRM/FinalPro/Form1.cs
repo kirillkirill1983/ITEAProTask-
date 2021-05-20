@@ -15,6 +15,7 @@ namespace FinalPro
     {
         public Form1()
         {
+          
             InitializeComponent();
             Database.SetInitializer(new DropPassword());
             using (var db = new BaseDB())
@@ -42,6 +43,11 @@ namespace FinalPro
                 if (count == 1  )
                 {
                     MessageBox.Show("Пользователь Есть");
+                    Form2 newForm = new Form2();
+                    
+                    newForm.Show();
+                    this.Close();
+                    
                 }
                 else
                 {
