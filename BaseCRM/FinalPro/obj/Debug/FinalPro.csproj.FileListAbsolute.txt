@@ -1,0 +1,15 @@
+G:\ITEAProTask\BaseCRM\FinalPro\obj\Debug\FinalPro.Form1.resources
+G:\ITEAProTask\BaseCRM\FinalPro\obj\Debug\FinalPro.Properties.Resources.resources
+G:\ITEAProTask\BaseCRM\FinalPro\obj\Debug\FinalPro.csproj.GenerateResource.cache
+G:\ITEAProTask\BaseCRM\FinalPro\obj\Debug\FinalPro.csproj.CoreCompileInputs.cache
+G:\ITEAProTask\BaseCRM\FinalPro\bin\Debug\FinalPro.exe.config
+G:\ITEAProTask\BaseCRM\FinalPro\bin\Debug\FinalPro.exe
+G:\ITEAProTask\BaseCRM\FinalPro\bin\Debug\FinalPro.pdb
+G:\ITEAProTask\BaseCRM\FinalPro\bin\Debug\EntityFramework.dll
+G:\ITEAProTask\BaseCRM\FinalPro\bin\Debug\EntityFramework.SqlServer.dll
+G:\ITEAProTask\BaseCRM\FinalPro\bin\Debug\EntityFramework.xml
+G:\ITEAProTask\BaseCRM\FinalPro\bin\Debug\EntityFramework.SqlServer.xml
+G:\ITEAProTask\BaseCRM\FinalPro\bin\Debug\ru\EntityFramework.resources.dll
+G:\ITEAProTask\BaseCRM\FinalPro\obj\Debug\FinalPro.csproj.CopyComplete
+G:\ITEAProTask\BaseCRM\FinalPro\obj\Debug\FinalPro.exe
+G:\ITEAProTask\BaseCRM\FinalPro\obj\Debug\FinalPro.pdb
