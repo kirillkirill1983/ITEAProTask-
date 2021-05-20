@@ -24,5 +24,30 @@ namespace FinalPro
                 Console.WriteLine(query);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int password = Convert.ToInt32( textBox1.Text);
+            string login = textBox2.Text;
+            int count = 0;
+            int count1 = 0;
+            using (var db = new BaseDB())
+            {
+                var item = db.Passwords.Where(p => p.PasswordEnter == password);
+                //count = item.Count();
+                //var item2 = db.Passwords.Where(p => p.Name == login);
+                //count1 = item2.Count();
+                var item2 = item.Where(p => p.Name == login);
+                count = item2.Count();
+                if (count == 1  )
+                {
+                    MessageBox.Show("Пользователь Есть");
+                }
+                else
+                {
+                    MessageBox.Show("Пользователь НЕТ");
+                }
+            }
+        }
     }
 }

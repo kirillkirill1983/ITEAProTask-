@@ -13,6 +13,7 @@ namespace FinalPro
         {
             HasKey(p => p.PasswordID);
             Property(p => p.Name).IsRequired().HasMaxLength(100);
+            Property(p => p.PasswordEnter);            
             HasOptional(p => p.Customer).WithRequired(ad => ad.Password);
             
         }

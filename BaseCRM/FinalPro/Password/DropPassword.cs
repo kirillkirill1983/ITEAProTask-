@@ -13,8 +13,9 @@ namespace FinalPro
         {
             base.Seed(context);
 
-            //context.Attendees.Add(new Attendee { DateAdded = DateTime.UtcNow, LastName = "Ivanov" });
-            context.Passwords.Add(new Password { PasswordID =1, Name="Kirill" });
+            
+            context.Passwords.Add(new Password { PasswordID =1, Name="Kirill", PasswordEnter=123 });
+            context.Passwords.Add(new Password { PasswordID = 2, Name = "Ira", PasswordEnter = 1567 });
 
             context.SaveChanges();
         }
