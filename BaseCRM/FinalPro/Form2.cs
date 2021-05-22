@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,19 +13,19 @@ namespace FinalPro
 {
     public partial class Form2 : Form
     {
+        private BaseDB BaseDB;
         public Form2()
         {
             InitializeComponent();
+            Database.SetInitializer(new DropCreateDatabaseAlways<BaseDB>());
+            BaseDB = new BaseDB();
             
-
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            using (var db=new BaseDB())
-            {
-                
-            }
+            BaseDB.Passwords.Load();
+            dataGridView1.DataSource = BaseDB.Passwords.Local.ToBindingList();
         }
 
         private void button1_Click(object sender, EventArgs e)
