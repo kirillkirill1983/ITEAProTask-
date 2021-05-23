@@ -23,24 +23,24 @@ namespace FinalPro
             Database.SetInitializer(new DropManager());
             Database.SetInitializer(new DropOrder());
             Database.SetInitializer(new DropProduct());
-            BaseDB = new BaseDB();
-            using (var db = new BaseDB())
-            {
-                var queryOrder = from order in BaseDB.Orders
-                            select order;
-                var queryProduct = from product in BaseDB.Products
-                                   select product;
-                //Console.WriteLine(queryProduct);
-                //Console.WriteLine(queryOrder);
-                foreach (var item in queryOrder)
-                {
-                    Console.WriteLine(item.Products);
-                }
-                foreach (var item in queryProduct)
-                {
-                    Console.WriteLine(item.Orders);
-                }
-            }
+            //BaseDB = new BaseDB();
+            //using (var db = new BaseDB())
+            //{
+            //    var queryOrder = from order in BaseDB.Orders
+            //                select order;
+            //    var queryProduct = from product in BaseDB.Products
+            //                       select product;
+            //    //Console.WriteLine(queryProduct);
+            //    //Console.WriteLine(queryOrder);
+            //    foreach (var item in queryOrder)
+            //    {
+            //        Console.WriteLine(item.Products);
+            //    }
+            //    foreach (var item in queryProduct)
+            //    {
+            //        Console.WriteLine(item.Orders);
+            //    }
+            //}
 
         }
        
@@ -68,6 +68,7 @@ namespace FinalPro
 
         private void button1_Click(object sender, EventArgs e)
         {
+            dataGridView1.Refresh();
             using (var db=new BaseDB())
             {
                 Product product = new Product 
@@ -77,7 +78,7 @@ namespace FinalPro
 
                 db.Products.Add(product );
                 db.SaveChanges();
-                dataGridView1.Refresh();
+                
 
                 Order order = new Order()
                 {
@@ -86,6 +87,7 @@ namespace FinalPro
                     TotalMount = Convert.ToInt32(textBox5.Text)
 
                 };
+                
                 db.Orders.Add(order);
                 db.SaveChanges();
                 dataGridView1.Refresh();
