@@ -18,6 +18,10 @@ namespace FinalPro
           
             InitializeComponent();
             Database.SetInitializer(new DropPassword());
+            Database.SetInitializer(new DropCustomer());
+            Database.SetInitializer(new DropManager());
+            Database.SetInitializer(new DropOrder());
+            Database.SetInitializer(new DropProduct());
             using (var db = new BaseDB())
             {
                 var query = from paswword in db.Passwords

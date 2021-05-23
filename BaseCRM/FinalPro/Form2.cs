@@ -24,8 +24,23 @@ namespace FinalPro
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            BaseDB.Passwords.Load();
-            dataGridView1.DataSource = BaseDB.Passwords.Local.ToBindingList();
+            BaseDB baseDB = new BaseDB(); 
+
+            var  result= from order in baseDB.Orders
+                             join products in baseDB.Products on order.OrderID equals products.ProductID
+                             
+                             select new
+                             {
+                                 Orders = order.OrderID,
+                                 Name = products.Name,
+                                 price = products.Price,
+                                 Maneger = order.ManagerName,
+                             };
+            //BaseDB.Passwords.Load();
+            result.Load();
+            //dataGridView1.DataSource = result;
+           
+
         }
 
         private void button1_Click(object sender, EventArgs e)
