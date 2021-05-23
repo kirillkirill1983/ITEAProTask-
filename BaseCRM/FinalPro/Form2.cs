@@ -43,27 +43,29 @@ namespace FinalPro
             //}
 
         }
-       
+
+        public static IEnumerable<object> GetResulr()
+        {
+            BaseDB baseDB =new BaseDB();
+            var result = (from order in baseDB.Orders
+                          join products in baseDB.Products on order.OrderID equals products.ProductID
+
+                          select new
+                          {
+                              Orders = order.OrderID,
+                              Name = products.Name,
+                              price = products.Price,
+                              Maneger = order.ManagerName,
+                          }).ToList(); 
+
+
+            return result;
+        }
+
 
         private void Form2_Load(object sender, EventArgs e)
         {
-           
-            BaseDB conn = new BaseDB();
-
-            var result = from order in conn.Orders
-                         join products in conn.Products on order.OrderID equals products.ProductID
-
-                         select new
-                         {
-                             Orders = order.OrderID,
-                             Name = products.Name,
-                             price = products.Price,
-                             Maneger = order.ManagerName,
-                         };
-
-            dataGridView1.DataSource = result.ToList();
-           
-
+            dataGridView1.DataSource =GetResulr();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -90,6 +92,8 @@ namespace FinalPro
                 
                 db.Orders.Add(order);
                 db.SaveChanges();
+                GetResulr();
+                dataGridView1.DataSource = GetResulr();
                 dataGridView1.Refresh();
             }
         }
