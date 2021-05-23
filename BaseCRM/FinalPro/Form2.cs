@@ -18,27 +18,50 @@ namespace FinalPro
         {
             InitializeComponent();
             Database.SetInitializer(new DropCreateDatabaseAlways<BaseDB>());
+            Database.SetInitializer(new DropPassword());
+            Database.SetInitializer(new DropCustomer());
+            Database.SetInitializer(new DropManager());
+            Database.SetInitializer(new DropOrder());
+            Database.SetInitializer(new DropProduct());
             BaseDB = new BaseDB();
-            
+            using (var db = new BaseDB())
+            {
+                var queryOrder = from order in BaseDB.Orders
+                            select order;
+                var queryProduct = from product in BaseDB.Products
+                                   select product;
+                //Console.WriteLine(queryProduct);
+                //Console.WriteLine(queryOrder);
+                foreach (var item in queryOrder)
+                {
+                    Console.WriteLine(item.Products);
+                }
+                foreach (var item in queryProduct)
+                {
+                    Console.WriteLine(item.Orders);
+                }
+            }
+
         }
+       
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            BaseDB baseDB = new BaseDB(); 
+           
+            BaseDB conn = new BaseDB();
 
-            var  result= from order in baseDB.Orders
-                             join products in baseDB.Products on order.OrderID equals products.ProductID
-                             
-                             select new
-                             {
-                                 Orders = order.OrderID,
-                                 Name = products.Name,
-                                 price = products.Price,
-                                 Maneger = order.ManagerName,
-                             };
-            //BaseDB.Passwords.Load();
-            result.Load();
-            //dataGridView1.DataSource = result;
+            var result = from order in conn.Orders
+                         join products in conn.Products on order.OrderID equals products.ProductID
+
+                         select new
+                         {
+                             Orders = order.OrderID,
+                             Name = products.Name,
+                             price = products.Price,
+                             Maneger = order.ManagerName,
+                         };
+
+            dataGridView1.DataSource = result.ToList();
            
 
         }
@@ -53,8 +76,8 @@ namespace FinalPro
                 };
 
                 db.Products.Add(product );
-                //db.SaveChanges();
-                //dataGridView1.Refresh();
+                db.SaveChanges();
+                dataGridView1.Refresh();
 
                 Order order = new Order()
                 {
