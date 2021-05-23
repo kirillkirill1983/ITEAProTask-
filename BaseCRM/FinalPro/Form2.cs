@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.Entity;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -95,6 +96,34 @@ namespace FinalPro
                 GetResulr();
                 dataGridView1.DataSource = GetResulr();
                 dataGridView1.Refresh();
+            }
+        }
+
+        private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //string file = "c:\\mygrid.txt";
+            FileStream file = File.Open(@"D:\test.txt", FileMode.OpenOrCreate, FileAccess.ReadWrite);
+            using (StreamWriter bw = new StreamWriter(file))
+            {
+                //bw.Write(dataGridView1.Columns.Count);
+                bw.Write(dataGridView1.Rows.Count);
+                foreach (DataGridViewRow dgvR in dataGridView1.Rows)
+                {
+                    for (int j = 0; j < dataGridView1.Columns.Count; ++j)
+                    {
+                        object val = dgvR.Cells[j].Value;
+                        if (val == null)
+                        {
+                            bw.Write(false);
+                            bw.Write(false);
+                        }
+                        else
+                        {
+                            bw.Write(true);
+                            bw.Write(val.ToString());
+                        }
+                    }
+                }
             }
         }
     }
