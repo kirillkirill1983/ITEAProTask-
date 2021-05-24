@@ -12,20 +12,13 @@ namespace FinalPro
         protected override void Seed(BaseDB context)
         {
             base.Seed(context);
-
-            //context.Passwords.Add(new Password { PasswordID = 2, Name = "Ira", PasswordEnter = 1567 });
             context.Products.Add(new Product
             {
                 ProductID = 1,
                 Name = "Chips",
                 Price = 12
             });
-            context.Products.Add(new Product
-            {
-                ProductID = 2,
-                Name = "ChipsTops",
-                Price = 17
-            });
+           
         }
     }
 }

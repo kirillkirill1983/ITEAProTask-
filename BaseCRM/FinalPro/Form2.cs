@@ -14,16 +14,16 @@ namespace FinalPro
 {
     public partial class Form2 : Form
     {
-        private BaseDB BaseDB;
+        //private BaseDB BaseDB;
         public Form2()
         {
             InitializeComponent();
-            Database.SetInitializer(new DropCreateDatabaseAlways<BaseDB>());
-            Database.SetInitializer(new DropPassword());
-            Database.SetInitializer(new DropCustomer());
-            Database.SetInitializer(new DropManager());
-            Database.SetInitializer(new DropOrder());
-            Database.SetInitializer(new DropProduct());
+            //Database.SetInitializer(new DropCreateDatabaseAlways<BaseDB>());
+            //Database.SetInitializer(new DropPassword());
+            //Database.SetInitializer(new DropCustomer());
+            //Database.SetInitializer(new DropManager());
+            //Database.SetInitializer(new DropOrder());
+            //Database.SetInitializer(new DropProduct());
             //BaseDB = new BaseDB();
             //using (var db = new BaseDB())
             //{

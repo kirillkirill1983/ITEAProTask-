@@ -17,17 +17,10 @@ namespace FinalPro
         {
           
             InitializeComponent();
-            Database.SetInitializer(new DropPassword());
-            Database.SetInitializer(new DropCustomer());
-            Database.SetInitializer(new DropManager());
-            Database.SetInitializer(new DropOrder());
-            Database.SetInitializer(new DropProduct());
-            using (var db = new BaseDB())
-            {
-                var query = from paswword in db.Passwords
-                            select paswword;
-                Console.WriteLine(query);
-            }
+            //Database.SetInitializer(new DropCreateDatabaseAlways<BaseDB>());
+            Database.SetInitializer(new DropCustomer<BaseDB>());
+            Database.SetInitializer(new DropManager<>)
+            
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -16,13 +16,7 @@ namespace FinalPro
             //context.Passwords.Add(new Password { PasswordID = 2, Name = "Ira", PasswordEnter = 1567 });
             context.Orders.Add(new Order { OrderID=1, ManagerName= "maneger1",
                 CustomerName ="Ivan" , TotalMount=5});
-            context.Orders.Add(new Order
-            {
-                OrderID = 2,
-                ManagerName = "maneger2",
-                CustomerName = "Kirill",
-                TotalMount = 7,
-            }); ;
+            
             context.SaveChanges();
         }
     
