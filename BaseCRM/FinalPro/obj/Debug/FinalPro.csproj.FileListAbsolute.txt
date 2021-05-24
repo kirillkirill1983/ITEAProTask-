@@ -13,5 +13,4 @@ G:\ITEAProTask\BaseCRM\FinalPro\bin\Debug\ru\EntityFramework.resources.dll
 G:\ITEAProTask\BaseCRM\FinalPro\obj\Debug\FinalPro.csproj.CopyComplete
 G:\ITEAProTask\BaseCRM\FinalPro\obj\Debug\FinalPro.exe
 G:\ITEAProTask\BaseCRM\FinalPro\obj\Debug\FinalPro.pdb
-G:\ITEAProTask\BaseCRM\FinalPro\obj\Debug\FinalPro.csprojAssemblyReference.cache
 G:\ITEAProTask\BaseCRM\FinalPro\obj\Debug\FinalPro.Form2.resources

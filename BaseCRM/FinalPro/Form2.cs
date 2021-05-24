@@ -18,31 +18,7 @@ namespace FinalPro
         public Form2()
         {
             InitializeComponent();
-            //Database.SetInitializer(new DropCreateDatabaseAlways<BaseDB>());
-            //Database.SetInitializer(new DropPassword());
-            //Database.SetInitializer(new DropCustomer());
-            //Database.SetInitializer(new DropManager());
-            //Database.SetInitializer(new DropOrder());
-            //Database.SetInitializer(new DropProduct());
-            //BaseDB = new BaseDB();
-            //using (var db = new BaseDB())
-            //{
-            //    var queryOrder = from order in BaseDB.Orders
-            //                select order;
-            //    var queryProduct = from product in BaseDB.Products
-            //                       select product;
-            //    //Console.WriteLine(queryProduct);
-            //    //Console.WriteLine(queryOrder);
-            //    foreach (var item in queryOrder)
-            //    {
-            //        Console.WriteLine(item.Products);
-            //    }
-            //    foreach (var item in queryProduct)
-            //    {
-            //        Console.WriteLine(item.Orders);
-            //    }
-            //}
-
+           
         }
 
         public static IEnumerable<object> GetResulr()

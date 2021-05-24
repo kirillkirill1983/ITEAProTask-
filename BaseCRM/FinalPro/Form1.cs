@@ -15,12 +15,8 @@ namespace FinalPro
     {
         public Form1()
         {
-          
             InitializeComponent();
-            //Database.SetInitializer(new DropCreateDatabaseAlways<BaseDB>());
-            Database.SetInitializer(new DropCustomer<BaseDB>());
-            Database.SetInitializer(new DropManager<>)
-            
+            Database.SetInitializer(new DropBase());
         }
 
         private void button1_Click(object sender, EventArgs e)
