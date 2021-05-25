@@ -80,11 +80,11 @@ namespace FinalPro
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(63, 315);
+            this.label1.Location = new System.Drawing.Point(44, 315);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 13);
+            this.label1.Size = new System.Drawing.Size(95, 13);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Название";
+            this.label1.Text = "Название товара";
             // 
             // label2
             // 
@@ -109,9 +109,9 @@ namespace FinalPro
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(428, 315);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 13);
+            this.label5.Size = new System.Drawing.Size(66, 13);
             this.label5.TabIndex = 7;
-            this.label5.Text = "количество";
+            this.label5.Text = "Количество";
             // 
             // textBox1
             // 
