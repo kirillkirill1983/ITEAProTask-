@@ -15,7 +15,7 @@ namespace FinalPro
             
             Property(p => p.Name).IsRequired().HasMaxLength(100);
 
-            Property(p => p.PasswordID).HasColumnName("PasswordID");
+            //Property(p => p.PasswordID).HasColumnName("PasswordID");
 
             Property(p => p.Adress).HasColumnName("Adress");
            

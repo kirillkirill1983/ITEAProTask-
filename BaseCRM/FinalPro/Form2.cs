@@ -21,20 +21,33 @@ namespace FinalPro
            
         }
 
-        public static IEnumerable<object> GetResulr()
+        public static IEnumerable<object> GetResulr(string client)
         {
             BaseDB baseDB =new BaseDB();
-            var result = (from order in baseDB.Orders
-                          join products in baseDB.Products on order.OrderID equals products.ProductID
+            //var result = (
+            //    from order in baseDB.Orders
+            //              join products in baseDB.Products on order.OrderID equals products.ProductID
 
-                          select new
-                          {
-                              Orders = order.OrderID,
-                              Name = products.Name,
-                              price = products.Price,
-                              Maneger = order.ManagerName,
-                          }).ToList(); 
-
+            //              select new
+            //              {
+            //                  Orders = order.OrderID,
+            //                  Name = products.Name,
+            //                  price = products.Price,
+            //                  Maneger = order.ManagerName,
+            //              }).ToList(); 
+            
+            var result = (from customer in baseDB.Customers
+                          from order in baseDB.Orders 
+                          join product in baseDB.Products on order.OrderID equals product.ProductID
+                          where (customer.Name==client)
+                select new
+                {
+                    Customer=customer.Name,
+                    Orders = order.OrderID,
+                    Name = product.NameProduct,
+                    price = product.PricePosition
+                    
+                }).ToList();
 
             return result;
         }
@@ -42,7 +55,8 @@ namespace FinalPro
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource =GetResulr();
+            string client = textBox4.Text;
+            dataGridView1.DataSource =GetResulr(client);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -51,26 +65,32 @@ namespace FinalPro
             using (var db=new BaseDB())
             {
                 Product product = new Product 
-                {   Name = textBox1.Text , 
-                    Price =Convert.ToInt32 (textBox2.Text)
+                {    NameProduct = textBox1.Text , 
+                     PricePosition =Convert.ToInt32 (textBox2.Text)
                 };
 
                 db.Products.Add(product );
                 db.SaveChanges();
                 
+                Customer customer = new Customer
+                {
+                    Name = textBox3.Text,
+                };
 
+                db.Customers.Add(customer);
+                db.SaveChanges();
+                
                 Order order = new Order()
                 {
-                    CustomerName = textBox3.Text,
-                    ManagerName = textBox4.Text,
                     TotalMount = Convert.ToInt32(textBox5.Text)
 
                 };
-                
+
+                string client = textBox4.Text;
                 db.Orders.Add(order);
                 db.SaveChanges();
-                GetResulr();
-                dataGridView1.DataSource = GetResulr();
+                GetResulr(client);
+                dataGridView1.DataSource = GetResulr(client);
                 dataGridView1.Refresh();
             }
         }
@@ -101,6 +121,12 @@ namespace FinalPro
                     }
                 }
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string client = textBox4.Text;
+            dataGridView1.DataSource = GetResulr(client);
         }
     }
 }

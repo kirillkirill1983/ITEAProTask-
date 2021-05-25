@@ -12,8 +12,8 @@ namespace FinalPro
         public int CustomerID { get; set; }
         public string Name { get; set; }
         public int Adress { get; set; }
-        public int PasswordID { get; set; }
-        public virtual Password Password { get; set; }
+        //public int PasswordID { get; set; }
+        //public virtual Password Password { get; set; }
 
         public ICollection<Order> Orders { get; set; }
     }

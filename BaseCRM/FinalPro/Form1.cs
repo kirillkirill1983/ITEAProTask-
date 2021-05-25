@@ -28,9 +28,7 @@ namespace FinalPro
             using (var db = new BaseDB())
             {
                 var item = db.Passwords.Where(p => p.PasswordEnter == password);
-                //count = item.Count();
-                //var item2 = db.Passwords.Where(p => p.Name == login);
-                //count1 = item2.Count();
+                
                 var item2 = item.Where(p => p.Name == login);
                 count = item2.Count();
                 if (count == 1  )

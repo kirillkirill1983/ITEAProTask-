@@ -12,8 +12,8 @@ namespace FinalPro
         public ProductConfig() 
         {
             this.HasKey<int>(p => p.ProductID);
-            this.Property(p => p.Name).HasMaxLength(50);
-            this.Property(p => p.Price).HasColumnName("Price");
+            this.Property(p => p.NameProduct).HasMaxLength(50).HasColumnName("NameProduct");
+            this.Property(p => p.PricePosition).HasColumnName("PricePosition");
 
             this.HasMany<Order>(s => s.Orders).
                 WithMany(c => c.Products).

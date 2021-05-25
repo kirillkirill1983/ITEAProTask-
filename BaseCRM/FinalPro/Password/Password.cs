@@ -12,6 +12,6 @@ namespace FinalPro
         public int PasswordID { get; set; }
         public string Name { get; set; }
         public int PasswordEnter { get; set; }
-        public virtual Customer Customer { get; set; }
+        //public virtual Customer Customer { get; set; }
     }
 }

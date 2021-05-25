@@ -13,11 +13,11 @@ namespace FinalPro
         {
             HasKey(p => p.ManagerID);
 
-            Property(p => p.Name).IsRequired().HasMaxLength(100);
+            Property(p => p.Name).
+                IsRequired().
+                HasMaxLength(100).
+                HasColumnName("Name");
 
-            Property(p => p.OrderLineID).HasColumnName("OrderLineID");
-
-            Property(p => p.Name).HasColumnName("Name");
         }
     }
 }

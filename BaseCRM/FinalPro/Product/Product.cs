@@ -9,8 +9,8 @@ namespace FinalPro
     public class Product
     {
         public int ProductID { get; set; }
-        public  string Name { get; set; }
-        public int Price { get; set; }
+        public  string NameProduct{ get; set; }
+        public int PricePosition { get; set; }
         public  virtual ICollection<Order> Orders  { get; set; }
         public Product()
         {
