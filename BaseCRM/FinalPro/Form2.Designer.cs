@@ -52,14 +52,14 @@ namespace FinalPro
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(98, 27);
+            this.dataGridView1.Location = new System.Drawing.Point(39, 27);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(467, 272);
             this.dataGridView1.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(77, 363);
+            this.button1.Location = new System.Drawing.Point(217, 363);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(118, 23);
             this.button1.TabIndex = 1;
@@ -69,7 +69,7 @@ namespace FinalPro
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(447, 363);
+            this.button2.Location = new System.Drawing.Point(541, 100);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(118, 23);
             this.button2.TabIndex = 2;
@@ -168,15 +168,15 @@ namespace FinalPro
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(582, 64);
+            this.textBox4.Location = new System.Drawing.Point(541, 54);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
+            this.textBox4.Size = new System.Drawing.Size(118, 20);
             this.textBox4.TabIndex = 14;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(595, 38);
+            this.label4.Location = new System.Drawing.Point(549, 27);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(73, 13);
             this.label4.TabIndex = 15;

@@ -37,7 +37,7 @@ namespace FinalPro
             //              }).ToList(); 
             
             var result = (from customer in baseDB.Customers
-                          from order in baseDB.Orders 
+                          join order in baseDB.Orders on customer.CustomerID equals order.OrderID 
                           join product in baseDB.Products on order.OrderID equals product.ProductID
                           where (customer.Name==client)
                 select new
