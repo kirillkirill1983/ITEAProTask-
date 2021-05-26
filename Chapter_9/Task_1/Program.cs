@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Task_1
 {
@@ -10,6 +7,52 @@ namespace Task_1
     {
         static void Main(string[] args)
         {
+            Dog dog = new Dog("Tomi");
+            dog.Info();
+            DogMini dogMini = new DogMini();
+            Console.ReadKey();
         }
     }
+
+    [Obsolete("Устаревший метод, лучше использовать что-нибудь поновее :)")]
+    class Dog 
+    {
+        private string name;
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
+        public Dog( string valuename) 
+        {
+            name = valuename;
+        }
+
+        public void Info()
+        {
+            Console.WriteLine( $"кличка => {this.Name} ");
+        }
+    }
+    [Obsolete("Устаревший метод, лучше использовать что-нибудь поновее :)", true)]
+    class DogMini
+    {
+        private string name;
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
+        public DogMini(string valuename)
+        {
+            name = valuename;
+        }
+
+        public void Info()
+        {
+            Console.WriteLine($"кличка => {this.Name} ");
+        }
+    }
+
 }
