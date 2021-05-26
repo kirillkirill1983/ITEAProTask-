@@ -9,7 +9,7 @@ namespace Task_1
         {
             Dog dog = new Dog("Tomi");
             dog.Info();
-            DogMini dogMini = new DogMini();
+            DogMini dogMini = new DogMini("MomDog");
             Console.ReadKey();
         }
     }
@@ -34,7 +34,7 @@ namespace Task_1
             Console.WriteLine( $"кличка => {this.Name} ");
         }
     }
-    [Obsolete("Устаревший метод, лучше использовать что-нибудь поновее :)", true)]
+    //[Obsolete("Устаревший метод, лучше использовать что-нибудь поновее :)", true)]
     class DogMini
     {
         private string name;
