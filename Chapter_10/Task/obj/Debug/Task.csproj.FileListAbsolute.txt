@@ -1,0 +1,7 @@
+G:\ITEAProTask\Chapter_10\Task\bin\Debug\Task.exe.config
+G:\ITEAProTask\Chapter_10\Task\bin\Debug\Task.exe
+G:\ITEAProTask\Chapter_10\Task\bin\Debug\Task.pdb
+G:\ITEAProTask\Chapter_10\Task\obj\Debug\Task.csproj.CoreCompileInputs.cache
+G:\ITEAProTask\Chapter_10\Task\obj\Debug\Task.exe
+G:\ITEAProTask\Chapter_10\Task\obj\Debug\Task.pdb
+G:\ITEAProTask\Chapter_10\Task\obj\Debug\Task.csprojAssemblyReference.cache

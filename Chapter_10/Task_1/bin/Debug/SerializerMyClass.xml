@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<SeriaMyClaspPIVO xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MyClass>
+    <MyClass AtributName="Kirill" AtributAdress="Pivasovo" />
+    <MyClass AtributName="Ivan" AtributAdress="Pivasovo" />
+    <MyClass AtributName="Vadim" AtributAdress="Pivasovo" />
+  </MyClass>
+</SeriaMyClaspPIVO>
