@@ -1,0 +1,6 @@
+G:\ITEAProTask\Chapter_10\Task_1\bin\Debug\Task_1.exe.config
+G:\ITEAProTask\Chapter_10\Task_1\bin\Debug\Task_1.exe
+G:\ITEAProTask\Chapter_10\Task_1\bin\Debug\Task_1.pdb
+G:\ITEAProTask\Chapter_10\Task_1\obj\Debug\Task_2_3.csproj.CoreCompileInputs.cache
+G:\ITEAProTask\Chapter_10\Task_1\obj\Debug\Task_1.exe
+G:\ITEAProTask\Chapter_10\Task_1\obj\Debug\Task_1.pdb
